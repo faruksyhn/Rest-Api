@@ -1,0 +1,9 @@
+﻿--------------------[Core Exception]--------------------
+Source		: System.Data
+Method		: get_String
+Date		: 22:31:16
+Time		: 2.05.2019
+Error		: 'System.DateTime' türündeki nesne 'System.String' türüne atılamadı.
+Stack Trace	: konum: System.Data.SqlClient.SqlBuffer.get_String()
+   konum: System.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   konum: OtoKiralama.DataAccess.Concretes.RezervasyonRepository.SelectAll(Int32 sirketId) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\RezervasyonRepository.cs içinde: satır 196

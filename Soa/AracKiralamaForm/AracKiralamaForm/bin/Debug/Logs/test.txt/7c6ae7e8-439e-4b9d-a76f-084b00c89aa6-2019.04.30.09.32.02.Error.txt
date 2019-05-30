@@ -1,0 +1,9 @@
+﻿--------------------[Core Exception]--------------------
+Source		: System.Data
+Method		: get_Int32
+Date		: 21:32:02
+Time		: 30.04.2019
+Error		: Belirtilen atama geçerli değil.
+Stack Trace	: konum: System.Data.SqlClient.SqlBuffer.get_Int32()
+   konum: System.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   konum: OtoKiralama.DataAccess.Concretes.RezervasyonRepository.SelectAll() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\RezervasyonRepository.cs içinde: satır 188

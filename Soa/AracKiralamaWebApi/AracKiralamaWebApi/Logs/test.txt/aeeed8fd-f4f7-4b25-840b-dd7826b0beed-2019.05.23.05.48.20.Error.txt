@@ -1,0 +1,9 @@
+﻿--------------------[Core Exception]--------------------
+Source		: System.Data
+Method		: GetParameter
+Date		: 17:48:20
+Time		: 23.05.2019
+Error		: ParameterName '@intErrorCode' olan SqlParameter bu SqlParameterCollection içinde değil.
+Stack Trace	: konum: System.Data.SqlClient.SqlParameterCollection.GetParameter(String parameterName)
+   konum: System.Data.Common.DbParameterCollection.get_Item(String parameterName)
+   konum: OtoKiralama.DataAccess.Concretes.RezervasyonRepository.Kazanç() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\RezervasyonRepository.cs içinde: satır 529

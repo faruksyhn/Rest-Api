@@ -1,0 +1,116 @@
+﻿@model List<OtoKiralama.Models.Arac>
+@{
+    ViewBag.Title = "ArabaDetay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int aracId, kendiAnlikKm;
+    decimal günlükKiralikFiyat;
+}
+
+
+<section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Page Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Araba Detayı</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                </div>
+            </div>
+            <!-- Page Title End -->
+        </div>
+    </div>
+</section>
+<!--== Page Title Area End ==-->
+<!--== Car List Area Start ==-->
+<section id="car-list-area" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Car List Content Start -->
+            <div class="col-lg-8">
+                <div class="car-details-content">
+                    @foreach (var item in Model)
+                    {
+                        aracId = item.AracId;
+                        kendiAnlikKm = item.KendiAnlikKM;
+                        günlükKiralikFiyat = item.GunlukKiralikFiyat;
+                        <h2>@item.AracAdi @item.Model <span class="price">Ücret: <b>₺@item.GunlukKiralikFiyat</b></span></h2>
+
+                        <div>
+                            <div class="view-product">
+                                <img style="width: 800px;" src="~/Content/img/car/@item.Resim" alt="JSOFT" />
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <!-- Car List Content End -->
+            <!-- Sidebar Area Start -->
+
+            <div class="col-lg-4">
+                <div class="sidebar-content-wrap m-t-50">
+                    <!-- Single Sidebar Start -->
+                    <div class="single-sidebar ">
+                        <h3>Rezervasyon Yap</h3>
+                        <div class="tech-info-list">
+                            <div class="sidebar-body">
+                                <div class="contact-form">
+                                    <form action="/Arac/RezervasyonYap" method="post">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="name-input">
+                                                    <input type="text" placeholder="Adınız" name="MusteriAdSoyad">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="email-input">
+                                                    <input type="email" placeholder="Email Address" name="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="name-input">
+                                                    <input type="text" placeholder="Ehliyet Yaşınız" name="EhliyetYasi">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="name-input">
+                                                    <input type="date" name="Alis_Tarihi" min="@DateTime.Now">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="name-input">
+                                                    <input type="date" name="Veris_Tarihi" min="@DateTime.Now">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @foreach (var item in Model)
+                                        {
+                                            @Html.Hidden("AracId", item.AracId)
+                                            @Html.Hidden("VerilisKm", item.KendiAnlikKM)
+                                            @Html.Hidden("AlinanUcret", item.GunlukKiralikFiyat)
+                                            @Html.Hidden("Iade", false)
+                                            @Html.Hidden("KabulDurumu", false)
+                                        }
+
+
+
+                                        <div class="input-submit">
+                                            <button type="submit">Rezervasyon Yap</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Single Sidebar End -->
+        </div>
+
+    </div>
+</section>
+<!--== Car List Area End ==-->

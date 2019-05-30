@@ -1,0 +1,128 @@
+﻿@model AracKiralamaWebSoap.AracWebService.Arac
+
+@{
+    ViewBag.Title = "ArabaDetay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+<section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Page Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Araba Detayı</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                </div>
+            </div>
+            <!-- Page Title End -->
+        </div>
+    </div>
+</section>
+<!--== Page Title Area End ==-->
+<!--== Car List Area Start ==-->
+<section id="car-list-area" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Car List Content Start -->
+            <div class="col-lg-8">
+                <div class="car-details-content">
+                    <h2>@Model.AracAdi @Model.Model <span class="price">Ücret: <b>₺@Model.GunlukKiralikFiyat</b></span></h2>
+
+                    <div>
+                        <div class="view-product">
+                            <img style="width: 800px;" src="~/Content/img/car/@Model.Resim" alt="JSOFT" />
+                        </div>
+                    </div>
+                    <ul class="recent-tips">
+                        <div class="technical-info">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="tech-info-table">
+                                        <ul>
+                                            <li>ABS</li>
+                                            <li>Air Bags</li>
+                                            <li>Bluetooth</li>
+                                            <li>Car Kit</li>
+                                            <li>GPS</li>
+                                            <li>Music</li>
+                                            <li>Bluetooth</li>
+                                            <li>ABS</li>
+                                            <li>@Model.AracId</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <!-- Car List Content End -->
+            <!-- Sidebar Area Start -->
+
+            <div class="col-lg-4">
+                <div class="sidebar-content-wrap m-t-50">
+                    <!-- Single Sidebar Start -->
+                    <div class="single-sidebar ">
+                        <h3>Ek Özellikler</h3>
+                        <div class="tech-info-list">
+                            <div class="sidebar-body">
+                                <div class="contact-form">
+                                    <form action="/Arac/RezervasyonYap" method="post">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="name-input">
+                                                    <input type="text" placeholder="Adınız" name="MusteriAdSoyad">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="email-input">
+                                                    <input type="email" placeholder="Email Address" name="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="name-input">
+                                                    <input type="text" placeholder="Ehliyet Yaşınız" name="EhliyetYasi">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="name-input">
+                                                    <input type="date" name="Alis_Tarihi" min="@DateTime.Now">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="name-input">
+                                                    <input type="date" name="Veris_Tarihi" min="@DateTime.Now">
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        @Html.Hidden("AracId",Model.AracId)
+                                        @Html.Hidden("VerilisKm", Model.KendiAnlikKM)
+                                        @Html.Hidden("AlinanUcret",Model.GunlukKiralikFiyat)
+                                        @Html.Hidden("Iade", false)
+                                        @Html.Hidden("KabulDurumu", false)
+
+                                        <div class="input-submit">
+                                            <button type="submit">Rezervasyon Yap</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-body">
+                    <a class="map-show" href="#"><b>RezervasYon Yap</b></a>
+                </div>
+            </div>
+            <!-- Single Sidebar End -->
+        </div>
+
+    </div>
+</section>
+<!--== Car List Area End ==-->

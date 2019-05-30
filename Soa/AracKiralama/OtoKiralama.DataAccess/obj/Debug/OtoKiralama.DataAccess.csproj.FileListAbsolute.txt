@@ -1,0 +1,11 @@
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\bin\Debug\OtoKiralama.DataAccess.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\bin\Debug\OtoKiralama.DataAccess.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\bin\Debug\OtoKiralama.DataAccess.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\bin\Debug\OtoKiralama.Models.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\bin\Debug\OtoKiralama.Models.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\bin\Debug\OtoKiralama.Models.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\obj\Debug\OtoKiralama.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\obj\Debug\OtoKiralama.DataAccess.csproj.CopyComplete
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\obj\Debug\OtoKiralama.DataAccess.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\obj\Debug\OtoKiralama.DataAccess.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\obj\Debug\OtoKiralama.DataAccess.csprojAssemblyReference.cache

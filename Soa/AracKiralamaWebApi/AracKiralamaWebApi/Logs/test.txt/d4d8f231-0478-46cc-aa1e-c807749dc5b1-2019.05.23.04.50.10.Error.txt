@@ -1,0 +1,17 @@
+﻿--------------------[Core Exception]--------------------
+Source		: .Net SqlClient Data Provider
+Method		: OnError
+Date		: 04:50:10
+Time		: 23.05.2019
+Error		: The parameterized query '(@AracAdi nvarchar(4000),@Model nvarchar(4000),@EhliyetYasi int,' expects the parameter '@AracAdi', which was not supplied.
+Stack Trace	: konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: OtoKiralama.DataAccess.Concretes.AracRepository.Insert(Arac entity) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\AracRepository.cs içinde: satır 221
+   konum: OtoKiralama.BusinesLogic.AracBusiness.InsertCar(Arac entity) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\AracBusiness.cs içinde: satır 29

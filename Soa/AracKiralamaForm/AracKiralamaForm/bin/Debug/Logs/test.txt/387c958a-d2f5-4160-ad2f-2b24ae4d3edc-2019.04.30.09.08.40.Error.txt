@@ -1,0 +1,7 @@
+﻿--------------------[Core Exception]--------------------
+Source		: OtoKiralama.DataAccess
+Method		: SelectAll
+Date		: 21:08:40
+Time		: 30.04.2019
+Error		: Nesne başvurusu bir nesnenin örneğine ayarlanmadı.
+Stack Trace	: konum: OtoKiralama.DataAccess.Concretes.RezervasyonRepository.SelectAll() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\RezervasyonRepository.cs içinde: satır 148

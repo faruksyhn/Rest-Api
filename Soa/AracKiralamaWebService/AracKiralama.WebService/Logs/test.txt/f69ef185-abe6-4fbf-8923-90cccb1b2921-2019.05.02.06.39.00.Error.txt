@@ -1,0 +1,9 @@
+﻿--------------------[Core Exception]--------------------
+Source		: System.Data
+Method		: get_String
+Date		: 18:39:00
+Time		: 2.05.2019
+Error		: Veri null. Bu metot veya özellik Null değerler için çağrılamaz.
+Stack Trace	: konum: System.Data.SqlClient.SqlBuffer.get_String()
+   konum: System.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   konum: OtoKiralama.DataAccess.Concretes.AracRepository.SelectAll() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\AracRepository.cs içinde: satır 102

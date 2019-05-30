@@ -1,0 +1,8 @@
+﻿--------------------[Core Exception]--------------------
+Source		: OtoKiralama.DataAccess
+Method		: Dispose
+Date		: 15:54:40
+Time		: 1.05.2019
+Error		: Metot veya işlem uygulanmadı.
+Stack Trace	: konum: OtoKiralama.DataAccess.Concretes.KullaniciRepository.Dispose() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\KullaniciRepository.cs içinde: satır 35
+   konum: OtoKiralama.BusinesLogic.KullaniciBusiness.kullaniciKontrol(String email, String Sifre) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\KullaniciBusiness.cs içinde: satır 28

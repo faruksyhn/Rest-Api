@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertCar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="entity" type="tns:Arac" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Arac">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AracId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AracAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Model" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EhliyetYasi" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinYasSiniri" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GunlukSinirKM" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="KendiAnlikKM" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Airbag" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="BagajHacmi" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="KoltukSayisi" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GunlukKiralikFiyat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SirketId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SirketAdi" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RezerveDurumu" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resim" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertCarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCarResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="entity" type="tns:Arac" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCarResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCarResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervYap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rezerv" type="tns:RezervasyonViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RezervasyonViewModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="KiralikId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AracId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MusteriAdSoyad" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EhliyetYasi" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AracAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Model" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alis_Tarihi" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Veris_Tarihi" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="VerilisKm" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AlinanUcret" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Iade" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="KabulDurumu" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RezervYapResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllCars">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllCarsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllCarsResult" type="tns:ArrayOfArac" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArac">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Arac" nillable="true" type="tns:Arac" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SelectAllRezerv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sirketId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllRezervResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllRezervResult" type="tns:ArrayOfRezervasyonViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRezervasyonViewModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RezervasyonViewModel" nillable="true" type="tns:RezervasyonViewModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SelectCarById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectCarByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectCarByIdResult" type="tns:Arac" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertCarSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCar" />
+  </wsdl:message>
+  <wsdl:message name="InsertCarSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCarSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCar" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCarSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCarSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCar" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCarSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="RezervYapSoapIn">
+    <wsdl:part name="parameters" element="tns:RezervYap" />
+  </wsdl:message>
+  <wsdl:message name="RezervYapSoapOut">
+    <wsdl:part name="parameters" element="tns:RezervYapResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllCarsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllCars" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllCarsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllCarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllRezervSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllRezerv" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllRezervSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllRezervResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectCarByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectCarById" />
+  </wsdl:message>
+  <wsdl:message name="SelectCarByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectCarByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AracWebServiceSoap">
+    <wsdl:operation name="InsertCar">
+      <wsdl:input message="tns:InsertCarSoapIn" />
+      <wsdl:output message="tns:InsertCarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCar">
+      <wsdl:input message="tns:UpdateCarSoapIn" />
+      <wsdl:output message="tns:UpdateCarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <wsdl:input message="tns:DeleteCarSoapIn" />
+      <wsdl:output message="tns:DeleteCarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RezervYap">
+      <wsdl:input message="tns:RezervYapSoapIn" />
+      <wsdl:output message="tns:RezervYapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCars">
+      <wsdl:input message="tns:SelectAllCarsSoapIn" />
+      <wsdl:output message="tns:SelectAllCarsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllRezerv">
+      <wsdl:input message="tns:SelectAllRezervSoapIn" />
+      <wsdl:output message="tns:SelectAllRezervSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCarById">
+      <wsdl:input message="tns:SelectCarByIdSoapIn" />
+      <wsdl:output message="tns:SelectCarByIdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AracWebServiceSoap" type="tns:AracWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertCar">
+      <soap:operation soapAction="http://tempuri.org/InsertCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCar">
+      <soap:operation soapAction="http://tempuri.org/UpdateCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <soap:operation soapAction="http://tempuri.org/DeleteCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervYap">
+      <soap:operation soapAction="http://tempuri.org/RezervYap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCars">
+      <soap:operation soapAction="http://tempuri.org/SelectAllCars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllRezerv">
+      <soap:operation soapAction="http://tempuri.org/SelectAllRezerv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCarById">
+      <soap:operation soapAction="http://tempuri.org/SelectCarById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AracWebServiceSoap12" type="tns:AracWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertCar">
+      <soap12:operation soapAction="http://tempuri.org/InsertCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCar">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervYap">
+      <soap12:operation soapAction="http://tempuri.org/RezervYap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCars">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllCars" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllRezerv">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllRezerv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCarById">
+      <soap12:operation soapAction="http://tempuri.org/SelectCarById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AracWebService">
+    <wsdl:port name="AracWebServiceSoap" binding="tns:AracWebServiceSoap">
+      <soap:address location="http://localhost:65149/AracWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AracWebServiceSoap12" binding="tns:AracWebServiceSoap12">
+      <soap12:address location="http://localhost:65149/AracWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

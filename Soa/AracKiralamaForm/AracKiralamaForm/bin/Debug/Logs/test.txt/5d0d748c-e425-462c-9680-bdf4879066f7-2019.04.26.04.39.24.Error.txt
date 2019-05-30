@@ -1,0 +1,8 @@
+﻿	--------------------[Wrap Exception]--------------------
+	Source		: OtoKiralama.DataAccess
+	Method		: Insert
+	Date		: 16:39:24
+	Time		: 26.04.2019
+	Error		: CustomersRepository::Insert:Error occured.
+	Stack Trace	: konum: OtoKiralama.DataAccess.Concretes.AracRepository.Insert(Arac entity) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\AracRepository.cs içinde: satır 257
+   konum: OtoKiralama.BusinesLogic.AracBusiness.InsertCar(Arac entity) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\AracBusiness.cs içinde: satır 27

@@ -1,0 +1,14 @@
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\obj\Debug\OtoKiralama.Commons.csprojAssemblyReference.cache
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\obj\Debug\OtoKiralama.Commons.csproj.CoreCompileInputs.cache
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.Commons.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.Commons.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\obj\Debug\OtoKiralama.Commons.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\obj\Debug\OtoKiralama.Commons.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.Models.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.Models.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.Models.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\obj\Debug\OtoKiralama.Commons.csproj.CopyComplete
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.DataAccess.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.DataAccess.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.DataAccess.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Commons\bin\Debug\OtoKiralama.Commons.dll

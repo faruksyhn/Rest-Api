@@ -1,0 +1,14 @@
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\obj\Debug\OtoKiralama.BusinesLogic.csproj.CoreCompileInputs.cache
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.BusinesLogic.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.BusinesLogic.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.Commons.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.DataAccess.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.Models.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.DataAccess.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.DataAccess.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.Models.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\bin\Debug\OtoKiralama.Models.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\obj\Debug\OtoKiralama.BusinesLogic.csprojAssemblyReference.cache
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\obj\Debug\OtoKiralama.BusinesLogic.csproj.CopyComplete
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\obj\Debug\OtoKiralama.BusinesLogic.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\obj\Debug\OtoKiralama.BusinesLogic.pdb

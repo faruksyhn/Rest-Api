@@ -1,0 +1,8 @@
+﻿--------------------[Core Exception]--------------------
+Source		: OtoKiralama.DataAccess
+Method		: Dispose
+Date		: 00:33:46
+Time		: 3.05.2019
+Error		: Metot veya işlem uygulanmadı.
+Stack Trace	: konum: OtoKiralama.DataAccess.Concretes.RezervasyonRepository.Dispose() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\RezervasyonRepository.cs içinde: satır 95
+   konum: OtoKiralama.BusinesLogic.RezervasyonBusiness.DeleteCarById(Int32 ID) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\RezervasyonBusiness.cs içinde: satır 62

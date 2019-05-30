@@ -1,0 +1,9 @@
+﻿--------------------[Core Exception]--------------------
+Source		: System.Data
+Method		: get_String
+Date		: 05:19:54
+Time		: 1.05.2019
+Error		: 'System.Int32' türündeki nesne 'System.String' türüne atılamadı.
+Stack Trace	: konum: System.Data.SqlClient.SqlBuffer.get_String()
+   konum: System.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   konum: OtoKiralama.DataAccess.Concretes.RezervasyonRepository.SelectAll() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\RezervasyonRepository.cs içinde: satır 182

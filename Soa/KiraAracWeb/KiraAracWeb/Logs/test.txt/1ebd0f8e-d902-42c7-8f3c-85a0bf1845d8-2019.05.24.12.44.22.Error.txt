@@ -1,0 +1,9 @@
+﻿--------------------[Core Exception]--------------------
+Source		: System.Data
+Method		: get_Decimal
+Date		: 12:44:22
+Time		: 24.05.2019
+Error		: Veri null. Bu metot veya özellik Null değerler için çağrılamaz.
+Stack Trace	: konum: System.Data.SqlClient.SqlBuffer.get_Decimal()
+   konum: System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   konum: OtoKiralama.DataAccess.Concretes.RezervasyonRepository.Kazanç() C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\RezervasyonRepository.cs içinde: satır 507

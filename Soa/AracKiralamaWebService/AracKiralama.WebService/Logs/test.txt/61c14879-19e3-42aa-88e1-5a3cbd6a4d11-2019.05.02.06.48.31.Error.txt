@@ -1,0 +1,8 @@
+﻿	--------------------[Wrap Exception]--------------------
+	Source		: OtoKiralama.DataAccess
+	Method		: SelectedById
+	Date		: 18:48:31
+	Time		: 2.05.2019
+	Error		: CustomersRepository::SelectById:Error occured.
+	Stack Trace	: konum: OtoKiralama.DataAccess.Concretes.AracRepository.SelectedById(Int32 id) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.DataAccess\Concretes\AracRepository.cs içinde: satır 324
+   konum: OtoKiralama.BusinesLogic.AracBusiness.SelectCarById(Int32 customerId) C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.BusinesLogic\AracBusiness.cs içinde: satır 96

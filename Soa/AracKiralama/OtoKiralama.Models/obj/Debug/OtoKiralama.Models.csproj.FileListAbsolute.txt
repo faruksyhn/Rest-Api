@@ -1,0 +1,12 @@
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\bin\Debug\OtoKiralama.Models.dll.config
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\bin\Debug\OtoKiralama.Models.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\bin\Debug\OtoKiralama.Models.pdb
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\bin\Debug\EntityFramework.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\bin\Debug\EntityFramework.xml
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\obj\Debug\OtoKiralama.Models.csprojAssemblyReference.cache
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\obj\Debug\OtoKiralama.Models.csproj.CoreCompileInputs.cache
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\obj\Debug\OtoKiralama.Models.csproj.CopyComplete
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\obj\Debug\OtoKiralama.Models.dll
+C:\Users\Emre\source\repos\AracKiralama\OtoKiralama.Models\obj\Debug\OtoKiralama.Models.pdb
